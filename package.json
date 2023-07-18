@@ -5,5 +5,23 @@
   "repository": "https://github.com/osawa-koki/learning-redis-with-nodejs.git",
   "author": "osawa-koki <github@osawa.dev>",
   "license": "Apache-2.0",
-  "private": false
+  "private": false,
+  "scripts": {
+    "dev": "ts-node ./src/index.ts",
+    "test": "echo \"Error: no test specified.\" && exit 0",
+    "lint:check": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix"
+  },
+  "dependencies": {
+    "ts-node": "^10.9.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.50.0",
+    "eslint": "^8.0.1",
+    "eslint-config-standard-with-typescript": "^36.1.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
+    "eslint-plugin-promise": "^6.0.0",
+    "typescript": "*"
+  }
 }
