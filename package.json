@@ -1,0 +1,9 @@
+{
+  "name": "learning-redis-with-nodejs",
+  "version": "1.0.0",
+  "description": "🤡🤡🤡 Node.jsでRedisを操作してみる！",
+  "repository": "https://github.com/osawa-koki/learning-redis-with-nodejs.git",
+  "author": "osawa-koki <github@osawa.dev>",
+  "license": "Apache-2.0",
+  "private": false
+}
