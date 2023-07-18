@@ -15,5 +15,3 @@ services:
       dockerfile: Dockerfile
     restart: always
     tty: true
-    ports:
-      - "6379:6379"
