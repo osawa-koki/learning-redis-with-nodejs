@@ -1,0 +1,19 @@
+name: Docker run
+
+on:
+  push:
+    branches:
+      - main
+      - issues/11
+
+jobs:
+  build-run:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v3
+      - name: Build the Docker image
+        run: docker-compose build
+      - name: Run Redis
+        run: docker-compose up -d redis
+      - name: Run App
+        run: docker-compose up -it app
