@@ -1,0 +1,19 @@
+version: '3.11'
+
+services:
+  app:
+    container_name: app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - redis
+  redis:
+    container_name: redis
+    build:
+      context: ./redis
+      dockerfile: Dockerfile
+    restart: always
+    tty: true
+    ports:
+      - "6379:6379"

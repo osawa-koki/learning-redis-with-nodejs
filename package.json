@@ -8,6 +8,7 @@
   "private": false,
   "scripts": {
     "dev": "ts-node ./src/index.ts",
+    "start": "ts-node ./src/index.ts",
     "test": "echo \"Error: no test specified.\" && exit 0",
     "lint:check": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix"
