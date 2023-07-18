@@ -18,4 +18,4 @@ jobs:
       - name: Run Redis
         run: docker-compose run -d --name my-redis redis
       - name: Run App
-        run: docker-compose run -it --name my-app app
+        run: docker-compose run app
