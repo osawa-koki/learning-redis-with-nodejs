@@ -14,6 +14,6 @@ jobs:
       - name: Build the Docker image
         run: docker-compose build
       - name: Run Redis
-        run: docker-compose up -d redis
+        run: docker-compose up -d --name my-redis redis
       - name: Run App
-        run: docker-compose up -it app
+        run: docker-compose up -it --name my-app app
